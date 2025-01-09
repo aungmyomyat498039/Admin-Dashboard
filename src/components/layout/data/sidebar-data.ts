@@ -1,27 +1,16 @@
 import {
-  IconBarrierBlock,
   IconBrowserCheck,
-  IconBug,
-  IconChecklist,
-  IconError404,
   IconHelp,
   IconLayoutDashboard,
-  IconLock,
-  IconLockAccess,
-  IconMessages,
   IconNotification,
-  IconPackages,
   IconPalette,
-  IconServerOff,
   IconSettings,
   IconTool,
   IconUserCog,
-  IconCar,
-  IconUsers,
-  IconBook,
-  IconFile
+  IconUser,
+  IconBuildingCommunity
 } from '@tabler/icons-react'
-import { AudioWaveform, Command, GalleryVerticalEnd } from 'lucide-react'
+import { Command, SquareKanban } from 'lucide-react'
 import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
@@ -36,35 +25,25 @@ export const sidebarData: SidebarData = {
       logo: Command,
       plan: 'イノベーション企業',
     },
-    {
-      name: '代理店',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
   ],
   navGroups: [
     {
       title: 'General',
       items: [
         {
-          title: 'トップページ',
+          title: 'ダッシュボード',
           url: '/',
           icon: IconLayoutDashboard,
         },
         {
-          title: ' 車両利用申請',
+          title: 'クライアント会社一覧',
           url: '/tasks',
-          icon: IconCar,
+          icon: IconBuildingCommunity,
         },
         {
-          title: '車両利用申請・管理',
+          title: 'スッタッフ一覧',
           url: '/apps',
-          icon: IconCar,
-        },
-        {
-          title: 'スタッフ・管理',
-          url: '/users',
-          icon: IconUsers,
+          icon: IconUser,
         },
       ],
     },
@@ -72,22 +51,9 @@ export const sidebarData: SidebarData = {
       title: 'Pages',
       items: [
         {
-          title: 'マニュアル',
-          url: '/',
-          icon: IconBook,
-          
-        },
-        {
-          title: '利用規約',
-          url: '/',
-          icon: IconFile,
-          
-        },
-        {
-          title: 'プライバシーポリシー',
-          url: '/',
-          icon: IconFile,
-          
+          title: 'プラン',
+          url: '/tasks',
+          icon: SquareKanban,   
         },
       ],
     },
@@ -99,29 +65,19 @@ export const sidebarData: SidebarData = {
           icon: IconSettings,
           items: [
             {
-              title: 'Profile',
+              title: 'プロフィール',
               url: '/settings',
               icon: IconUserCog,
             },
             {
-              title: 'Account',
+              title: 'アカウント',
               url: '/settings/account',
               icon: IconTool,
             },
             {
-              title: 'Appearance',
-              url: '/settings/appearance',
-              icon: IconPalette,
-            },
-            {
-              title: 'Notifications',
+              title: '通知',
               url: '/settings/notifications',
               icon: IconNotification,
-            },
-            {
-              title: 'Display',
-              url: '/settings/display',
-              icon: IconBrowserCheck,
             },
           ],
         },
