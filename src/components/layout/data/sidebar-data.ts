@@ -1,9 +1,7 @@
 import {
-  IconBrowserCheck,
   IconHelp,
   IconLayoutDashboard,
   IconNotification,
-  IconPalette,
   IconSettings,
   IconTool,
   IconUserCog,
