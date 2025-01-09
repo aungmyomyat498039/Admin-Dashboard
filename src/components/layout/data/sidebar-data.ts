@@ -40,7 +40,7 @@ export const sidebarData: SidebarData = {
         },
         {
           title: 'スッタッフ一覧',
-          url: '/apps',
+          url: '/users',
           icon: IconUser,
         },
       ],
@@ -50,7 +50,7 @@ export const sidebarData: SidebarData = {
       items: [
         {
           title: 'プラン',
-          url: '/tasks',
+          url: '/apps',
           icon: SquareKanban,   
         },
       ],
